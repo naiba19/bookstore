@@ -1,18 +1,23 @@
 /* tienne-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Tienne';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/tienne-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Tienne';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/tienne-v21-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* tienne-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Tienne';
-  font-style: normal;
-  font-weight: 700;
-  src: url('./fonts/tienne-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Tienne';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/tienne-v21-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 header {
@@ -45,6 +50,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 footer {
     background-color: #c88fe9;
     height: 120px;
@@ -58,7 +64,12 @@ footer {
 
 footer img {
     width: 80px;
-    position: absolute;
-    left: 20px;
-    top: 40px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-family: "Tienne";
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(99, 109, 96);
 }
