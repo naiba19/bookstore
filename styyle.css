@@ -1,0 +1,40 @@
+/* tienne-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Tienne';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/tienne-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* tienne-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Tienne';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/tienne-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+header {
+    background-color: #c88fe9;
+    height: 160px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 160px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Tienne";
+    font-weight: 400;
+    font-size: 32px;
+    color: rgb(99, 109, 96);
+}
