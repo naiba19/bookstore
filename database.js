@@ -32,7 +32,7 @@ let books = [
         "comments": [
             {
                 "name": "SarahM",
-                "comment": "No other spiritual book /self improvement book I've read connects with me the way "You can Heal Your Life" does. Louise Hay's writing is simple and to the point, not poetic, yet still beautifully put and there is a warmth to her writing which touches the soul."
+                "comment": "No other spiritual book /self improvement book I've read connects with me the way You can Heal Your Life does. Louise Hay's writing is simple and to the point, not poetic, yet still beautifully put and there is a warmth to her writing which touches the soul."
             },
             {
                 "name": "Sharon M",
