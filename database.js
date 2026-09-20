@@ -7,7 +7,7 @@ let books = [
         "price": 29.99,
         "publishedYear": 2024,
         "genre": "Neuropsychology",
-        "image": "./images/raising-mentally-strong-kids.webp",
+        "image": "raising-mentally-strong-kids.webp",
         "comments": [
             {
                 "name": "TinaC",
@@ -28,7 +28,7 @@ let books = [
         "price": 16.99,
         "publishedYear": 1984,
         "genre": "Self-Help",
-        "image": "./images/you-can-heal-your-life.webp",
+        "image": "you-can-heal-your-life.webp",
         "comments": [
             {
                 "name": "SarahM",
@@ -75,7 +75,7 @@ let books = [
         "price": 21.50,
         "publishedYear": 2019,
         "genre": "Spirituality",
-        "image": "becoming-supernatural.jpg",
+        "image": "becoming-supernatural.jpeg",
         "comments": [
             {
                 "name": "MindReader",
@@ -116,7 +116,7 @@ let books = [
         "price": 29.00,
         "publishedYear": 2024,
         "genre": "Self-help",
-        "image": "the-let-them-theory.jpg",
+        "image": "the-let-them-theory.jpeg",
         "comments": [
             {
                 "name": "N Chris",
