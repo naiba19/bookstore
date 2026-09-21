@@ -95,7 +95,7 @@ let books = [
         "liked": false,
         "price": 22.99,
         "publishedYear": 2020,
-        "genre": "Kreativität",
+        "genre": "Creativity",
         "image": "the-artist-s-way.webp",
         "comments": [
             {
@@ -115,7 +115,7 @@ let books = [
         "liked": true,
         "price": 29.00,
         "publishedYear": 2024,
-        "genre": "Self-help",
+        "genre": "Self-Help",
         "image": "the-let-them-theory.jpeg",
         "comments": [
             {
@@ -156,7 +156,7 @@ let books = [
         "liked": true,
         "price": 14.99,
         "publishedYear": 2009,
-        "genre": "Self-help",
+        "genre": "Self-Help",
         "image": "the-power-of-your-subconscious-mind.webp",
         "comments": [
             {

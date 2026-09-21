@@ -21,7 +21,7 @@
 }
 
 header {
-    background-color: #c88fe9;
+    background-color: #fddd73;
     height: 130px;
     position: relative;
     display: flex;
@@ -33,15 +33,17 @@ header img {
     width: 130px;
     position: absolute;
     left: 20px;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 header h1 {
     margin: 0;
     font-family: "Tienne";
     font-weight: 400;
-    font-size: 32px;
-    color: rgb(99, 109, 96);
+    font-size: 44px;
+    color: rgb(80, 156, 57);
+
 }
 
 body {
@@ -49,6 +51,11 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    background-color: #ffee8b;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 #book-container {
@@ -56,20 +63,22 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 50px auto 30px;
     padding: 0 30px;
 }
 
 .book-card {
-    background-color: chocolate;
+    background-color: #e0bb82;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(80, 50, 90, 0.12);
+    display: flex;
+    flex-direction: column;
 }
 
 .book-image-container {
     height: 300px;
-    background-color: #f5eef8;
+    background-color: #e9c47f;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,15 +92,19 @@ body {
 }
 
 .book-content {
-    background-color: #aa9393;
+    background-color: #e0bb82;
     padding: 25px;
     text-align: center;
+    font-family: "Tienne";
+    font-weight: 400;
 }
 
 .book-content h2 {
     margin: 0 0 12px 0;
     font-size: 22px;
     text-align: center;
+    font-family: "Tienne";
+    font-weight: 700;
 }
 
 .author {
@@ -101,6 +114,13 @@ body {
 .book-info {
     margin-bottom: 20px;
     text-align: center;
+    font-family: "Tienne";
+    font-weight: 400;
+}
+
+.book-info strong {
+    font-family: "Tienne";
+    font-weight: 700;
 }
 
 .book-info p {
@@ -114,20 +134,24 @@ body {
 }
 
 .price {
+    font-family: "Tienne";
     font-size: 20px;
     font-weight: 700;
+    color: #D86A24;
 }
 
 .like-button {
     border: none;
     background: none;
     cursor: pointer;
-    font-size: 26px;
-    color: rgb(45, 202, 92);
+    font-size: 20px;
+    color: #D86A24;
+    font-family: "Tienne";
+    font-weight: 400;
 }
 
 .like-button.liked {
-    color: crimson;
+    color: #C94B2C;
 }
 
 .comments-section {
@@ -147,12 +171,12 @@ body {
     margin-bottom: 15px;
 }
 
-.single-comment p: first-child {
+.single-comment p:first-child {
     font-weight: 700;
     margin: 0 0 6px 0;
 }
 
-.single-comment p: last-child {
+.single-comment p:last-child {
     font-weight: 400;
     margin: 0;
     line-height: 1.4;
@@ -166,7 +190,7 @@ body {
 .comment-input input {
     flex: 1;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #C8B982;
 }
 
 .comment-input button {
@@ -177,7 +201,7 @@ body {
 }
 
 footer {
-    background-color: #c88fe9;
+    background-color: #fddd73;
     height: 120px;
     display: flex;
     flex-direction: column;
@@ -196,68 +220,69 @@ footer p {
     font-family: "Tienne";
     font-weight: 400;
     font-size: 12px;
-    color: rgb(99, 109, 96);
+    color: rgb(80, 156, 57);
 }
 
 @media (max-width: 900px) {
     #book-container {
         grid-template-columns: repeat(2, 1fr);
     }
+}
 
 @media (max-width: 600px) {
-        #book-container {
-            grid-template-columns: 1fr;
-            padding: 0 15px;
-            margin: 30px auto;
-        }
-
-        header {
-            height: 110px;
-        }
-
-
-        header img {
-            width: 90px;
-            left: 10px;
-        }
-
-        header h1 {
-            font-size: 24px;
-            padding-left: 90px;
-            text-align: center;
-        }
-
-        .book-content {
-            padding: 20px;
-        }
+    #book-container {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+        margin: 30px auto;
     }
 
-    @media (max-width: 320px) {
-        #book-container {
-            padding: 0 10px;
-        }
-
-        header h1 {
-            font-size: 20px;
-        }
-
-        header img {
-            width: 75px;
-        }
-
-        .book-content h2 {
-            font-size: 19px;
-        }
-
-        .book-bottom {
-            gap: 10px;
-        }
-
-        .price {
-            font-size: 17px;
-        }
-
-        .like-button {
-            font-size: 22px;
-        }
+    header {
+        height: 110px;
     }
+
+
+    header img {
+        width: 90px;
+        left: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        padding-left: 90px;
+        text-align: center;
+    }
+
+    .book-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    #book-container {
+        padding: 0 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header img {
+        width: 75px;
+    }
+
+    .book-content h2 {
+        font-size: 19px;
+    }
+
+    .book-bottom {
+        gap: 10px;
+    }
+
+    .price {
+        font-size: 17px;
+    }
+
+    .like-button {
+        font-size: 22px;
+    }
+}
